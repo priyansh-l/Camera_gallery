@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="video-cont">
+        <video autoplay></video>
+    </div>
+    <div class="actions-btn">
+        <div class="record-btn-cont">
+            <div class="record-btn "></div>
+        </div>
+        <div class="capture-btn-cont">
+            <div class="capture-btn "></div>
+        </div>
+    </div>
+    <div class="timer">00:00:00</div>
+    <div class="filters">
+        <div class="filter orange"></div>
+        <div class="filter brown"></div>
+        <div class="filter golden"></div>
+        <div class="filter transparent"></div>
+    </div>
+    <div class="gallery-cont">
+        <span class="material-symbols-outlined">
+            gallery_thumbnail
+        </span>
+    </div>
+    <div class="filter-layer"></div>
+    <script src="./db.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        let gallery_cont = document.querySelector(".gallery-cont");
+        gallery_cont.addEventListener("click", () => {
+            location.assign("./gallery.html");
+        })
+    </script>
+</body>
+
+</html>
